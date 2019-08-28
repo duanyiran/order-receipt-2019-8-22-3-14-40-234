@@ -6,6 +6,7 @@ package org.katas.refactoring;
  * of order. It computes the total order amount (amount of individual lineItems +
  * total sales tax) and prints it.
  */
+//命名不可以使用缩写？
 public class OrderReceipt {
     private Order o;
 
@@ -38,6 +39,7 @@ public class OrderReceipt {
             output.append(lineItem.totalAmount());
             output.append('\n');
 
+//魔法数字
             // calculate sales tax @ rate of 10%
             double salesTax = lineItem.totalAmount() * .10;
             totSalesTx += salesTax;
